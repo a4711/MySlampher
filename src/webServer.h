@@ -51,6 +51,7 @@ private:
   <INPUT type=\"submit\" value=\"Save\"><br>\
   </form>\
   <form action=\"reset\" method=\"GET\"><INPUT type=\"submit\" value=\"Reset\"><br></form>\
+  <hr>\
   <form>\
   MQTT IP Address <INPUT readonly type=\"text\" name=\"ip\" value=\"" + ip.toString() + "\"><br> \
   MQTT MAC Address <INPUT readonly type=\"text\" name=\"mac\" value=\"" + mac + "\"><br> \

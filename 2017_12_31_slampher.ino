@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <string.h>
 #include "src/myiot_timer_system.h"
 #include "src/DeviceConfig.h"
 #include "src/webServer.h"
@@ -37,15 +38,15 @@ void setup() {
    testVcc.setup([](const char* topic, const char* msg){mqtt.publish(topic,msg);}  );
 
    mqtt.subscribe("control", [] (const char*msg) {
-		if (0 == ::strcmp("on", msg))
+		if (0 == ::strcasecmp("on", msg))
 		{
 			relay.enable(true);
 		}
-		else if (0 == ::strcmp("off",msg))
+		else if (0 == ::strcasecmp("off",msg))
 		{
 			relay.enable(false);
 		}
-		else if (0 == ::strcmp("toggle", msg))
+		else if (0 == ::strcasecmp("toggle", msg))
 		{
 			relay.toggle();
 		}
