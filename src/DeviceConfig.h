@@ -23,6 +23,8 @@ class DeviceConfig
   void setup()
   {
      fsReadConfig();
+     WiFi.hostname(this->getDeviceName());
+
      WiFiManager wifiManager;
      WiFiManagerParameter custom_device_name("device", "Device Name", deviceName, sizeof(deviceName));
      WiFiManagerParameter custom_mqtt_server("server", "MQTT Server", mqttServer, sizeof(mqttServer));

@@ -42,6 +42,8 @@ private:
     uint32_t realFlashSize = ESP.getFlashChipRealSize();
     String sRealFlashSize(realFlashSize);
 
+    int32_t rssi = WiFi.RSSI(); // receive signal strength
+    String sRSSI(rssi);
 
     String html1 = "<!DOCTYPE html>\r\n<html>\r\n\
 <head><title>Configuration " + String(config->getDeviceName())+ "</title></head>\r\n\
@@ -57,6 +59,7 @@ private:
   MQTT MAC Address <INPUT readonly type=\"text\" name=\"mac\" value=\"" + mac + "\"><br> \
   MQTT Flash Size <INPUT readonly type=\"text\" name=\"flashSize\" value=\"" + sFlashSize + "\"><br> \
   MQTT Real Flash Size <INPUT readonly type=\"text\" name=\"realFlashSize\" value=\"" + sRealFlashSize + "\"><br> \
+  Receive Signal Strength (RSSI) <INPUT readonly type=\"text\" name=\"rssi\" value=\"" + sRSSI + "\"><br> \
   </form>\
 </body> \
 </html>";
