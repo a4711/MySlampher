@@ -55,10 +55,10 @@ private:
   <form action=\"reset\" method=\"GET\"><INPUT type=\"submit\" value=\"Reset\"><br></form>\
   <hr>\
   <form>\
-  MQTT IP Address <INPUT readonly type=\"text\" name=\"ip\" value=\"" + ip.toString() + "\"><br> \
-  MQTT MAC Address <INPUT readonly type=\"text\" name=\"mac\" value=\"" + mac + "\"><br> \
-  MQTT Flash Size <INPUT readonly type=\"text\" name=\"flashSize\" value=\"" + sFlashSize + "\"><br> \
-  MQTT Real Flash Size <INPUT readonly type=\"text\" name=\"realFlashSize\" value=\"" + sRealFlashSize + "\"><br> \
+  IP Address <INPUT readonly type=\"text\" name=\"ip\" value=\"" + ip.toString() + "\"><br> \
+  MAC Address <INPUT readonly type=\"text\" name=\"mac\" value=\"" + mac + "\"><br> \
+  Flash Size <INPUT readonly type=\"text\" name=\"flashSize\" value=\"" + sFlashSize + "\"><br> \
+  Real Flash Size <INPUT readonly type=\"text\" name=\"realFlashSize\" value=\"" + sRealFlashSize + "\"><br> \
   Receive Signal Strength (RSSI) <INPUT readonly type=\"text\" name=\"rssi\" value=\"" + sRSSI + "\"><br> \
   </form>\
 </body> \
