@@ -3,9 +3,12 @@
 
 #include <functional>
 #include <PubSubClient.h>
+#include <WiFiClient.h>
 
 #include "myiot_timer_system.h"
 
+namespace MyIOT
+{
 class Mqtt : public MyIOT::ITimer
 {
   enum {MAX_NUMBER_OF_SUBSCRIPTIONS = 5};
@@ -190,6 +193,5 @@ private:
 
     F_OnConnected OnConnected;
 };
-
-
+}
 #endif

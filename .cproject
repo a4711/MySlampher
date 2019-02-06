@@ -25,7 +25,7 @@
             			
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 				
-                <configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1422289645" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+                <configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.1422289645" name="Release" optionalBuildProperties="" parent="org.eclipse.cdt.build.core.emptycfg">
                     					
                     <folderInfo id="io.sloeber.core.toolChain.release.1422289645.177907795" name="/" resourcePath="">
                         						
@@ -37,7 +37,7 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.cpp.1383136002" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
                                 								
-                                <option id="io.sloeber.compiler.cpp.sketch.option.incpath.1547164755" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.cpp.sketch.option.incpath.1547164755" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/core/core}&quot;"/>
                                     									
@@ -51,11 +51,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient}&quot;"/>
                                     									
@@ -65,9 +61,17 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient_ID89/src}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -77,7 +81,7 @@
                             							
                             <tool id="io.sloeber.tool.compiler.c.1048580424" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
                                 								
-                                <option id="io.sloeber.compiler.c.sketch.option.incpath.334782723" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.c.sketch.option.incpath.334782723" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/core/core}&quot;"/>
                                     									
@@ -91,11 +95,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient}&quot;"/>
                                     									
@@ -105,9 +105,17 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient_ID89/src}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -117,7 +125,7 @@
                             							
                             <tool id="io.sloeber.tool.sketch.compiler.s.1772199431" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
                                 								
-                                <option id="io.sloeber.compiler.asm.sketch.option.incpath.1787492490" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
+                                <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.asm.sketch.option.incpath.1787492490" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/core/core}&quot;"/>
                                     									
@@ -131,11 +139,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
-                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi}&quot;"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient}&quot;"/>
                                     									
@@ -145,9 +149,17 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer}&quot;"/>
                                     									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/DNSServer/src}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266mDNS}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WebServer/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ESP8266WiFi/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/ArduinoJson_ID64/src}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/2017_12_31_slampher/libraries/PubSubClient_ID89/src}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -169,7 +181,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="libraries/WiFiManager/travis|libraries/ArduinoJson/scripts|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/**/test*/**|libraries/?*/**/third-party/**|libraries**/._*|libraries/?*/c*/?*|libraries/?*/d*/?*|libraries/?*/D*/?*" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+                        <entry excluding="libraries/ArduinoJson_ID64/.github|libraries/WiFiManager/travis|libraries/ArduinoJson/scripts|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/**/test*/**|libraries/?*/**/third-party/**|libraries**/._*|libraries/?*/c*/?*|libraries/?*/d*/?*|libraries/?*/D*/?*" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

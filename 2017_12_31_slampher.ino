@@ -1,10 +1,10 @@
 #include <Arduino.h>
 #include <string.h>
 #include "src/myiot_timer_system.h"
-#include "src/DeviceConfig.h"
-#include "src/webServer.h"
-#include "src/mqtt.h"
-#include "src/ota.h"
+#include "src/myiot_webServer.h"
+#include "src/myiot_DeviceConfig.h"
+#include "src/myiot_mqtt.h"
+#include "src/myiot_ota.h"
 
 #include "src/DeviceButton.h"
 #include "src/led.h"
@@ -12,9 +12,13 @@
 #include "src/TestVcc.h"
 
 MyIOT::TimerSystem tsystem;
-Mqtt mqtt;
-DeviceConfig config;
+MyIOT::Mqtt mqtt;
+MyIOT::DeviceConfig config;
+MyIOT::WebServer webServer;
+MyIOT::OTA ota;
+
 DeviceButton button(0); // GPIO 0 is the button
+
 Led led(13);  // LED of sonoff
 Relay relay(12);
 

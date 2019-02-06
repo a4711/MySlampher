@@ -5,6 +5,8 @@
 #include <ArduinoOTA.h>
 #include "myiot_timer_system.h"
 
+namespace MyIOT
+{
 class OTA : public MyIOT::ITimer
 {
   public:
@@ -39,7 +41,8 @@ class OTA : public MyIOT::ITimer
       ArduinoOTA.handle();
   }
   virtual void destroy(){}
-} ota;
+};
+}
 
 
 #endif
